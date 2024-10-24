@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f4f3;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(90deg, #7cb342, #aed581);
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 2rem;
+    color: #fff;
+    margin-left: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #2e7d32;
+}
+
+header .cta {
+    background-color: #fff;
+    color: #2e7d32;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 30px;
+}
+
+header .cta:hover {
+    background-color: #2e7d32;
+    color: #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.hero .cta {
+    background-color: #7cb342;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.hero .cta:hover {
+    background-color: #2e7d32;
+    transform: scale(1.1);
+}
+
+.kits {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.kits h2 {
+    font-size: 2.5rem;
+    color: #7cb342;
+    margin-bottom: 40px;
+}
+
+.kit-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.kit-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.kit-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.kit-card h3 {
+    font-size: 1.8rem;
+    color: #2e7d32;
+}
+
+.kit-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.kit-card .learn-more {
+    background-color: #7cb342;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.kit-card .learn-more:hover {
+    background-color: #2e7d32;
+}
+
+.gardening-types {
+    padding: 60px 30px;
+    background-color: #7cb342;
+    text-align: center;
+}
+
+.gardening-types h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.gardening-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.gardening-options .option {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gardening-options .option:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.gardening-options img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.gardening-options h3 {
+    font-size: 1.8rem;
+    color: #2e7d32;
+}
+
+.gardening-options p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.gardening-options .learn-more {
+    background-color: #7cb342;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.gardening-options .learn-more:hover {
+    background-color: #2e7d32;
+}
+
+.testimonials {
+    padding: 60px 30px;
+    background-image: url(./kitchen-Kit.webp);
+    text-align: center;
+    color: #fff;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testimonial {
+    background-color: #aed581;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.contact {
+    padding: 60px 30px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #7cb342;
+    margin-bottom: 40px;
+}
+
+.map-container {
+    margin-top: 40px;
+}
+
+.map-container h3 {
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 1200px;
+    border: 0;
+}
+
+footer {
+    padding: 30px 30px;
+    background-color: #2e7d32;
+    color: #fff;
+    text-align: center;
+    height: 250px;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
+
+footer .quick-links a {
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+footer .contact-info p {
+    font-size: 0.9rem;
+}
